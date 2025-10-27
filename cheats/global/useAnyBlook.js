@@ -85,9 +85,9 @@
             }
             blooksHook.next.queue.dispatch(userBlooks);
             blooksHook.queue.dispatch(!showBlooks);
-            setTimeout(() => blooksHook.queue.dispatch(showBlooks), 1);
+            setTimeout(() => blooksHook.queue.dispatch(showBlooks), 20);
         } else if (lobby) Object.values(document.querySelector("#app>div>div"))[1].children[0]._owner.stateNode.setState({ unlocks: { includes: () => !0 } });
-        else alert("This only works in lobbies or the dashboard blooks page.");
+        else alert("This works when you refresh your page.");
         
     });
     let img = new Image;
